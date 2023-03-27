@@ -95,6 +95,7 @@ const uploadRecipeBtnHandler = async function (data) {
 };
 
 const init = function () {
+  console.log("Welcome to the application");
   recipeView.addEventHandlerMainRender(recipeShowHandler);
   recipeView.addEventHandlerChangeServings(servingsHandler);
   recipeView.addEventHandlerBookmarkButton(bookmarkBtnHandler);
