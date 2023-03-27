@@ -12,7 +12,7 @@ class ResultView extends View {
         string +
         `
         <li class="preview">
-          <a class="preview__link " href="='#${recipeListItem.id}">
+          <a class="preview__link " href="#${recipeListItem.id}">
           <figure class="preview__fig">
             <img src="${recipeListItem.imageUrl}" alt="${
           recipeListItem.title
