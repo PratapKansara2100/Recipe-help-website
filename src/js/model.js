@@ -37,7 +37,6 @@ export const fetchRecipe = async function (id) {
     const data = await getJson(`${API_URL}/${id}?key=${API_KEY}`);
 
     state.recipe = formattingRecipe(data);
-    console.log(state.recipe);
     if (state.bookmarked.some((recipeSummary) => recipeSummary.id === id))
       state.recipe.bookmark = true;
     else state.recipe.bookmark = false;
