@@ -1,5 +1,5 @@
 import icons from "url:../../img/icons.svg";
-import { Fraction } from "fractional";
+import { fracty } from "fracty";
 import View from "./View.js";
 
 class RecipeView extends View {
@@ -40,7 +40,7 @@ class RecipeView extends View {
       </svg>
       <div class="recipe__quantity">${
         ingridentObj.quantity
-          ? new Fraction(ingridentObj.quantity).toString()
+          ? new fracty(ingridentObj.quantity).toString()
           : ""
       }</div>
       <div class="recipe__description">
