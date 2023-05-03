@@ -78,7 +78,7 @@ export const getSearchResultPage = function (page = state.search.currentPage) {
 };
 
 export const updateServings = function (servingValueChange) {
-  newServingValue = state.recipe.servings + servingValueChange;
+  let newServingValue = state.recipe.servings + servingValueChange;
   if (newServingValue < 1) return;
   state.recipe.ingredients.forEach((ingredient) => {
     ingredient.quantity =
